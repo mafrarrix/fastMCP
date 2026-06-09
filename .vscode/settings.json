@@ -1,0 +1,35 @@
+{
+  "python-envs.pythonProjects": [
+    {
+      "path": ".",
+      "envManager": "ms-python.python:venv",
+      "packageManager": "ms-python.python:pip"
+    }
+  ],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    ".mule": true
+  },
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+  "python.languageServer": "Pylance",
+  "pylint.path": ["${workspaceFolder}\\.venv\\Scripts\\pylint"],
+  "pylint.args": [
+    "--init-hook",
+    "import sys; sys.path.insert(0, 'src')",
+    "--disable=C0114,C0115,C0116"
+  ],
+
+  "mcp": {
+    "servers": {
+      "my-mcp-server-64282587": {
+        "url": "http://0.0.0.0:8000/mcp",
+        "type": "http"
+      },
+      "inputs": []
+    }
+  }
+}
