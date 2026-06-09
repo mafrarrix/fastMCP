@@ -4,6 +4,7 @@
   // Per altre informazioni, visitare: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
+    
     {
       "name": "Debugger Python: File corrente con argomenti",
       "type": "debugpy",
@@ -18,6 +19,13 @@
       "type": "debugpy",
       "request": "launch",
       "program": "${file}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Debugger Python: start MCP",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}\\src\\desktop_mcp\\main.py",
       "console": "integratedTerminal"
     }
   ]

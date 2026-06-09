@@ -12,12 +12,11 @@ personalizzato:
 """
 
 from pathlib import Path
-
 from fastmcp import FastMCP
 
 # ── Costanti ──────────────────────────────────────────────────────────────────
 # 👉 PERSONALIZZA: cambia questo path per puntare alle risorse del tuo server.
-DESKTOP: Path = Path.home() / "Desktop"
+DESKTOP: Path = Path.home() 
 
 # ── Istanza FastMCP ───────────────────────────────────────────────────────────
 # 👉 PERSONALIZZA: modifica `name` e `instructions` per descrivere il tuo server.
